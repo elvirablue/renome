@@ -1,0 +1,22 @@
+<svg id="декор" xmlns="http://www.w3.org/2000/svg" width="708" height="921" viewBox="0 0 708 921">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f2ebd7;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Группа_77" data-name="Группа 77">
+    <g id="Группа_51" data-name="Группа 51">
+      <path id="Прямоугольник_10" data-name="Прямоугольник 10" class="cls-1" d="M630.143,3435.14V3292.28a35.8,35.8,0,0,0,35.533-34.71h171.11v177.57H630.143Zm3.354,0V3294.96a35.168,35.168,0,0,0,34.957-34.05H836.786v174.23H633.5Z" transform="translate(-616 -3244)"/>
+      <path id="Прямоугольник_10_копия" data-name="Прямоугольник 10 копия" class="cls-1" d="M616,3245H858v209H616V3245Zm3.937,3.16H858V3454H619.937V3248.16Z" transform="translate(-616 -3244)"/>
+    </g>
+    <g id="Группа_51_копия" data-name="Группа 51 копия">
+      <path id="Прямоугольник_10-2" data-name="Прямоугольник 10" class="cls-1" d="M1306.86,3974.86v142.86a35.816,35.816,0,0,0-35.54,34.71H1100.21V3974.86h206.65Zm-3.36,0v140.18a35.158,35.158,0,0,0-34.95,34.05H1100.21V3974.86H1303.5Z" transform="translate(-616 -3244)"/>
+      <path id="Прямоугольник_10_копия-2" data-name="Прямоугольник 10 копия" class="cls-1" d="M1079,3956h242v209H1079V3956Zm0,0h238.06v205.84H1079V3956Z" transform="translate(-616 -3244)"/>
+    </g>
+  </g>
+  <path id="Фигура_6" data-name="Фигура 6" class="cls-1" d="M913,3245v-1h411v1H913m409,2h1v593h-1V3247" transform="translate(-616 -3244)"/>
+  <path id="Фигура_7" data-name="Фигура 7" class="cls-1" d="M617,3569h1v593h-1V3569m6,594v-1h455v1H623" transform="translate(-616 -3244)"/>
+</svg>

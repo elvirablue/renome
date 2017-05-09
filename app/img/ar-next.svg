@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8.19" height="15.75" viewBox="0 0 8.19 15.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #9a8549;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1040.81" y="3337.38" width="8.19" height="15.75" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="1040.81" y="3337.38" width="8.19" height="15.75" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOC4xOSIgaGVpZ2h0PSIxNS43NSIgdmlld0JveD0iMCAwIDguMTkgMTUuNzUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iNC4wOTUiIHkxPSIxNS43NSIgeDI9IjQuMDk1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzhjNzkzZSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuMDA1IiBzdG9wLWNvbG9yPSIjOGM3OTNlIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC41NTciIHN0b3AtY29sb3I9IiNhZjlhNWQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjU4OCIgc3RvcC1jb2xvcj0iI2YzZTlhYiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNjMGE1NWIiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjguMTkiIGhlaWdodD0iMTUuNzUiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Прямоугольник_11_копия" data-name="Прямоугольник 11 копия" class="cls-1" d="M1040.98,3353.12l-0.17-.17v-15.4l0.17-.17,8.01,7.87Z" transform="translate(-1040.81 -3337.38)"/>
+</svg>

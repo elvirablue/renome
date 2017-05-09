@@ -1,0 +1,36 @@
+.main-events-bg {
+	width: 100%;
+	background-image: url("../img/bg-main-events-center.png"), url("../img/bg-main-events.jpg");
+	background-position:  center 100px, top center;
+	background-repeat: no-repeat;
+	background-size: auto, cover;
+	
+	margin-top: -115px;
+	padding-top: 160px;
+}
+
+.main-events {
+	.container-fluid();
+
+	&__fixed-event {
+		padding-top: 5rem;
+	}
+	
+	&__block-prev {
+		display: block;
+		width: 100%;
+		padding-top: 5rem;
+	}
+}
+
+@media @mobil-widths {
+	.main-events-bg {
+		background: url("../img/bg-event-prev-2.png") center 200px no-repeat @color-bg-light;		
+		background-size: 20rem auto;
+	}
+
+
+	.main-events__block-prev {
+		padding-top: 3rem;
+	}
+}

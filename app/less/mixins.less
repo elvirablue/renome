@@ -1,0 +1,77 @@
+@import "variables.less";
+@import "scaffolding.less";
+@import "blocks/btn.less";
+@import "blocks/first-screen.less";
+@import "blocks/page-header.less";
+@import "blocks/social-block.less";
+@import "blocks/main-nav.less";
+@import "blocks/main-events.less";
+@import "blocks/fixed-event.less";
+@import "blocks/event-prev.less";
+@import "blocks/renome.less";
+@import "blocks/calendar.less";
+
+
+.hidden {
+	display: none;
+}
+ 
+
+.wrapper-x {
+	overflow: hidden !important;
+	min-height: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+.wrapper-y {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0 0 @height-footer;
+	min-height: 100vh;
+}
+
+.clearfix() {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+
+.container-fluid() {
+	width: 100%;
+	max-width: 960px;
+	padding: 0 1.25rem;
+	margin: 0 auto;
+
+	@media @tablet-widths {
+		width: 100%;
+	}
+
+	@media @mobil-widths {
+		width: auto;
+		text-align: center;
+		min-width: 320px;
+		padding: 0 1.2rem;
+	}
+
+}
+
+.palatino(@size) {  
+  font-family: 'Palatino Linotype', Palatino, serif;
+  font-size: @size;  
+}
+
+.muller(@size) {  
+  font-family: 'MullerThinDemo', Arial, sans-serif;
+  font-size: @size; 
+}
+
+.gotham(@size) { 
+  font-family: "GothamProRegular", Arial, sans-serif;
+  font-size: @size; 
+}
+

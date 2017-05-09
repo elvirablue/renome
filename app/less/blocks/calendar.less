@@ -1,0 +1,112 @@
+.main-calendar {
+	.container-fluid();
+}
+
+.calendar-bg-decor {
+	display: block;
+	margin: 2rem auto;
+	padding: 4.5rem;
+	width: 50rem;
+	height: 63rem;
+	background: url("../img/bg-calendar-frame.svg")  center center no-repeat,
+				url("../img/bg-calendar-decor.png")  center center no-repeat;
+	background-size: auto;
+}
+
+.calendar-wrapper {
+	display: block;	
+	width: 100%;
+	height: 100%;
+	background: url("../img/bg-calendar.png")  center center no-repeat;
+	background-size: auto;
+	padding: 4rem 3rem 2rem;
+}
+
+.calendar {
+	text-align: center;
+	h3 {
+		display: inline-block;
+		.palatino(2.5rem);
+		color: #000000;
+		text-align: center;
+		padding-bottom: 2.5rem;
+	}
+
+	.nav-prev {		
+		display: inline-block;
+		vertical-align: top;
+		width: 3rem;
+		height: 3rem;
+		background: url("../img/ar-prev.svg") center center no-repeat;
+		cursor: pointer;
+	}
+
+	.nav-next {		
+		display: inline-block;
+		vertical-align: top;
+		width: 3rem;
+		height: 3rem;
+		background: url("../img/ar-next.svg") center center no-repeat;
+		cursor: pointer;
+	}
+
+	.calendar-month {
+		width: 100%;
+		text-align: center;
+	}
+
+	.weekday {
+		color: #8a7847;
+		.palatino(1.55rem);
+		font-weight: lighter;
+		padding-bottom: 2rem;
+	}
+
+	table td {
+		span.day {
+			.palatino(1.55rem);
+		}
+		
+		padding: 1.4rem 0;
+		border: 1px solid #e0dbd4;
+		background-color: #ffffff;
+	}
+
+	.current-month {		
+		color: #000000;
+		cursor: pointer;
+	}
+
+	.current-month.active,
+	.current-month:active,
+	.current-month:hover {
+		box-shadow: inset 0 0 2px 1px #ffffff;
+		background-color: #eae2ca;
+	}
+
+	.other-month {		
+		color: #c2b79d;
+	}
+}
+
+.calendar-conventions {
+	display: block;
+	width: 100%;
+	padding: 3rem 1rem;
+	.palatino(1.2rem);
+	letter-spacing: 1.5px;
+
+	span {
+		display: inline-block;
+		width: 48%;
+	}
+
+
+	i {
+		display: inline-block;
+		vertical-align: middle;
+		width: 8px;
+		height: 8px;
+		margin-right: 5px;
+	}
+}

@@ -1,0 +1,68 @@
+.page-header {
+	.container-fluid();
+	.clearfix();
+	position: relative;
+	z-index: 1;
+	
+	background-color: #ffffff;
+
+	&__contact {
+		display: inline-block;
+		width: 13rem;
+		padding: 1rem 1.25rem;
+		
+		color: @color-main;
+		height: 6.4rem;
+		border-right: 1px solid #faf9f5;
+		border-left: 1px solid #faf9f5;
+	}
+
+	&__contact.left {
+		float: left;
+		margin-left: -1.25rem;
+		text-align: left;
+	}
+	&__contact.right {
+		float: right;
+		margin-right: -1.25rem;
+		text-align: right;
+	}
+
+	&__contact-address {
+		padding-bottom: 0.5rem;
+	}
+
+	&__contact-phone {		
+		.palatino(1.25rem);		
+	}
+
+	&__logo {
+		display: inline-block;
+		position: absolute;
+		z-index: 10;
+		top: 1rem;
+		left: 50%;
+		margin-left: -3.125rem;
+		width: 6.25rem;
+		height: 8.5rem;
+
+		img {
+			width: 100%;
+		}	
+	}
+}
+
+@media @mobil-widths {
+	.page-header {
+		&__contact {
+			display: none;
+		}
+
+		&__logo {
+			width: 5rem;
+			height: 6.8rem;
+			margin-left: -2.5rem;
+
+		}
+	}
+}

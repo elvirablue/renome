@@ -1,0 +1,42 @@
+.fixed-event {
+	.clearfix();
+	display: block;
+
+	&__img-wr {
+		display: inline-block;
+		float: left;
+		width: 20rem;
+		height: 14.5rem;
+		background: url("../img/frame-fixed-event.png") center center no-repeat;
+		background-size: contain;
+		padding: 1.6rem;
+		text-align: center;
+		overflow: hidden;
+		img {width: 100%;}
+		transform: rotate(-5deg);	
+	}
+
+	&__content {
+		display: inline-block;
+		float: right;
+		width: 50%;
+				
+	}
+
+	&__content-text {
+		height: 7.8rem;
+		overflow: hidden;
+		margin-bottom: 2rem;
+	}
+
+	&__btn {
+		display: block;
+		width: 17rem;
+	}
+}
+
+@media @mobil-widths {
+	.fixed-event {
+		display: none;
+	}
+}

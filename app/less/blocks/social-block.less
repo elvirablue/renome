@@ -1,0 +1,32 @@
+.social-block {
+	display: block;
+	text-align: center;
+	font-size: 0;
+	padding: 1rem 0;
+
+	&__item {
+		display: inline-block;
+		width: 1.45rem;
+		height: 1.45rem;
+		margin: 4px;
+		background-image: url("../img/ico-social.png"), radial-gradient( 50% 50%, circle closest-side, rgba(255,255,255,0) 0%, rgb(251,249,245) 100%);
+		border-radius: 4px;
+		border: 1px solid #f7f3e2;		
+		background-repeat: no-repeat;
+		font-size: 0;
+	}
+
+	&__item:hover {
+		border-color: rgb(194, 168, 117);
+		background-image: url("../img/ico-social-hover.png");
+		background-color: #c2a875;
+	}
+
+	&--fb {	background-position: 0 0;}
+
+	&--vk { background-position: -23.5px 0;}
+
+	&--inst { background-position: -47.5px 0;}
+
+	&--tw { background-position: -70px 0;}
+}

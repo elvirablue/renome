@@ -1,0 +1,183 @@
+.main-renome {
+	.container-fluid();
+	text-align: center;
+}
+
+.renome-block {
+	display: inline-block;
+	width: 28.125rem;
+	height: 21.875rem;
+	position: relative;
+	z-index: 11;
+	cursor: pointer;
+	margin: 0 -1rem 1rem;
+	text-align: left;
+
+	&__content {
+		position: absolute;
+		z-index: 12;
+		top: 0;
+		left: 2.2rem;
+		width: 23.75rem;
+		height: 20.3rem;		
+		padding: 1rem 1.5rem;
+		transition: background-color ease 1s, box-shadow ease 1s;
+		
+	}
+
+	&__content-text {
+		display: block;
+		height: 12rem;
+		padding-top: 1.5rem;
+		font-size: 0.9rem;
+		color: @color-dark;
+		font-weight: bold;
+		overflow: hidden;
+		opacity: 0;
+		transition: opacity ease 1.5s;
+	}
+
+	&__content-btn {
+		position: absolute;
+		bottom: 0.5rem;		
+		left: 1.5rem;
+		width: 100%;
+	}
+
+	&__content-btn-more {
+		width: 11.625rem;
+	}
+
+	&__content-btn-calendar {
+		width: 3rem;
+		padding: 0;
+		background: url("../img/calendar.svg") center center no-repeat #ffffff;
+		margin: 0 5px;
+	}
+}
+
+.renome-block:nth-child(6),
+.renome-block:nth-child(4),
+.renome-block:nth-child(5) {
+	h3 {
+		text-align: right;
+		padding-left: 35%;
+	}
+}
+
+.renome-block:nth-child(7),
+.renome-block:nth-child(4),
+.renome-block:nth-child(5) {
+	.renome-block__content-btn {
+		right: 0.75rem;
+		left: auto;
+		text-align: right;
+	}
+}
+	
+@media @desktop-widths-only {
+	.renome-block:hover {
+		.renome-block__content {
+			background-color: rgba(248, 246, 244, 0.7);
+			border-color: rgb(195, 184, 158);
+  			border-radius: 2px;
+  			box-shadow: inset 0 0 20px 2px rgba(161, 147, 118, 0.6), inset 0 0 70px 8px rgba(238, 226, 203, 0.4);
+		}
+		.renome-block__content-text {
+			opacity: 1;
+		} 
+	}
+
+}
+
+@media @tablet-widths and (min-width: 780px) {
+	.renome-block {
+		display: block;
+		margin: 0 auto;
+		width: 46rem;		
+
+		&__content-text {
+			opacity: 1;
+			font-weight: normal;
+		}
+	}
+
+	.renome-block:nth-child(even) {
+		h3 {
+			padding: 0;
+			text-align: left;
+		}
+		.renome-block__content {
+			left: auto;
+			right: 1rem;
+			width: 19rem;
+		}
+
+		.renome-block__content-btn {
+			text-align: left;
+			padding-left: 0rem;
+			right: auto;
+		}
+	}
+
+	.renome-block:nth-child(odd)  {
+		h3 {
+			padding: 0;
+			text-align: right;
+		}
+		.renome-block__img-wr {
+			margin-left: 18rem;
+			margin-right: 0rem;
+		}
+
+		.renome-block__content {			
+			width: 19rem;
+			left: 1rem;
+		}
+
+		.renome-block__content-btn {
+			text-align: left;
+			padding-left: 2rem;
+			right: 0.75rem;
+			left: auto;
+		}
+	}
+}
+
+@media @mobil-widths {
+	.renome-block {
+		display: block;
+		width: 90vw;
+		margin: 0 auto;
+		min-width: 18rem;
+		max-width: 28.125rem;
+		height: ~'calc(90vw / 1.17 + 3rem)';
+		max-height: 25rem;
+		margin-bottom: 2rem;
+
+		&__content {
+			width: 90vw;
+			min-width: 14rem;
+			max-width: 25rem;
+			padding: 1rem 10% 0;
+			height: ~'calc(90vw / 1.17 + 1.5rem)';
+			max-height: 25rem;
+			left: auto;
+		}
+
+		&__content-text {
+			opacity: 0;
+		}
+
+		
+	}
+
+	.renome-block:nth-child(n) {
+		.renome-block__content-btn {
+			text-align: left;
+			padding: 0;
+			right: auto;
+			left: auto;
+		}
+	}
+}
