@@ -54,7 +54,7 @@
 			var prev_m = month == 0 ? 11 : month-1;
 			var prev_y = prev_m == 11 ? year - 1 : year;
 			var prev_days = getDaysInMonth(prev_m, prev_y);
-			firstDay = (firstDay == 1 && firstDayDate) ? 7 : firstDay;
+			firstDay = (firstDay == 1 && firstDayDate) ? 8 : firstDay;
 			+firstDay --;
 			var i = 0;
             for (j=0;j<42;j++){

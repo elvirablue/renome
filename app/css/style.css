@@ -1341,6 +1341,11 @@ a {
   background: url("../img/bg-calendar-frame.svg") center center no-repeat, url("../img/bg-calendar-decor.png") center center no-repeat;
   background-size: auto;
 }
+@media (max-width: 960px) {
+  .calendar-bg-decor {
+    background: url("../img/bg-calendar-frame.svg") center center no-repeat;
+  }
+}
 .calendar-wrapper {
   display: block;
   width: 100%;
