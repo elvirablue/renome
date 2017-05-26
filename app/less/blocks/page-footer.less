@@ -1,0 +1,39 @@
+.page-footer-bg {
+	display: block;
+	width: 100%;
+	background-color: #fbfaf5;
+	border-top: 2px solid #f5f2e9;
+	height: @height-footer;
+	margin-top: -@height-footer;
+}
+
+.page-footer {
+	.container-fluid();
+	.clearfix();
+	position: relative;
+	z-index: 1;
+
+	&__logo {
+		display: inline-block;
+		position: absolute;
+		z-index: 10;
+		top: -3.5rem;
+		left: 50%;
+		margin-left: -3.125rem;
+		width: 6.25rem;
+		height: 8.5rem;
+	}
+}
+
+@media @mobil-widths {
+	.page-footer {
+		
+		&__logo {
+			width: 5rem;
+			height: 6.8rem;
+			margin-left: -2.5rem;
+			top: 0.3rem;
+
+		}
+	}
+}

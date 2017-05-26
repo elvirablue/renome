@@ -31,8 +31,17 @@
 	       .wrapper-x {display: none;}	       
 	    </style>
 	 <![endif]-->
-</head>
+</head> 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="wrapper-x">
 	<div class="wrapper-y">
 	<!-- *************************** ШАПКА ***************************************- -->
@@ -71,7 +80,7 @@
 						<li><a href="gallery.html">Фотогалерея</a></li>
 						<li><a href="lease.html">Аренда</a></li>
 						<li><a href="area.html">Пространство</a></li>
-						<li><a href="contact.html">Контакты</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -106,7 +115,7 @@
 			<div class="main-events">
 				<h2>Ближайшие события</h2>
 				<div class="main-events__fixed-event fixed-event">
-					<div class="fixed-event__img-wr">
+					<div class="img-wr-rotate">
 						<img src="img/events/event1.jpg" alt="">
 					</div>
 					<div class="fixed-event__content">
@@ -180,10 +189,10 @@
 			</div>			
 		</div>
 
-	<!-- *************************** БЛОК РЕНОМЕ - ЭТО... ***************************************- -->
+	<!-- *************************** БЛОК КАТЕГОРИИ - РЕНОМЕ - ЭТО... ***************************************- -->
 		<div class="main-renome">
 			<h1>Реноме - это:</h1>
-
+			<!--блок категория - НАЧАЛО-->
 			<div class="renome-block">
 				<div class="renome-block__img-wr">
 					<img src="img/renome1.png" alt="">
@@ -199,7 +208,8 @@
 					</p>
 				</div>
 			</div>
-
+			<!--блок категория - КОНЕЦ-->
+			
 			<div class="renome-block">
 				<div class="renome-block__img-wr">
 					<img src="img/renome2.png" alt="">
@@ -289,6 +299,7 @@
 
 			<div class="main-calendar">
 				<h2>Календарь мероприятий</h2>
+				<!-- блок календарь НАЧАЛО -->
 				<div class="calendar-bg-decor">
 					<div class="calendar-wrapper">
 						<div class="calendar" id="calendar">						
@@ -323,6 +334,7 @@
 						</div>	
 					</div>				
 				</div>
+				<!-- блок календарь КОНЕЦ -->
 			</div>
 
 		<!-- *************************** БЛОК ОТЗЫВЫ ***************************************- -->
@@ -405,36 +417,185 @@
 			</div>
 
 
+		<!-- *************************** БЛОК СМИ О НАС *************************************** -->
+			<div class="separator"></div>
+			<div class="main-pressa">
+				<h2 class="head-page">СМИ о нас</h2>
+				<div class="main-pressa__wrapper">
+					<ul class="pressa">
+						<li class="pressa__item">
+							<figure>
+								<img src="img/smi/smi-1.png" alt="">
+								<figcaption class="pressa__description">
+									<span class="pressa__title">Название публикации</span>
+									<span class="pressa__date">01/01/2017</span>
+									<span class="pressa__source">Источник: Название</span>
+								</figcaption>
+							</figure>							
+						</li> 
+						<li class="pressa__item pressa__item--video">
+							<figure>
+								<img src="img/smi/smi-2.png" alt="">
+								<figcaption class="pressa__description">
+									<span class="pressa__title">Название публикации</span>
+									<span class="pressa__date">01/01/2017</span>
+									<span class="pressa__source">Источник: Название</span>
+								</figcaption>
+							</figure>							
+						</li>
+						<li class="pressa__item">
+							<figure>
+								<img src="img/smi/smi-3.png" alt="">
+								<figcaption class="pressa__description">
+									<span class="pressa__title">Название публикации</span>
+									<span class="pressa__date">01/01/2017</span>
+									<span class="pressa__source">Источник: Название</span>
+								</figcaption>
+							</figure>							
+						</li>						
+					</ul>					
+				</div>
+
+				<div class="btn-block">
+					<a href="smi-publications.html" class="link pressa__link">Смотреть все публикации</a>
+					
+				</div>
+			</div>
+
 		</div><!-- ****** Большой фон КОНЕЦ *********- -->
 
-	
-
-
-
-
-
-
-
-		<div class="hidden">
-			<p style="font-family: 'Palatino Linotype', Palatino, serif; font-size: 25px; text-transform: uppercase; color: #9c874b; letter-spacing: 2px;">
-			Ближайшие события
-				
-			</p>
-			<p style="font-family: 'MullerThinDemo', Arial, sans-serif; font-size: 15px; ">
-			Посмотреть все фотоотчеты
-				
-			</p>
-
-			<button class="btn-beige">Подробнее</button>
-			<button class="btn-transparent-dark">Подробнее</button>
-			<button class="btn-transparent-light">Читать полностью</button>
-			<button class="btn-sand">Смотреть все отзывы</button>
+		<!-- *************************** БЛОК Наши партнеры *************************************** -->
+		<div class="separator"></div>
+		<div class="separator"></div>
+		<div class="partners">
+			<h2>Наши партнеры</h2>
 		</div>
+		<div class="partners-bg">
+			<div class="partners">
+				<div class="partners__arrow prev js-logo-prev">◄</div>
+				<div class="partners__wrapper">
+					<ul class="partners__list">
+						<li class="partners__item">
+							<img src="img/partners/logo-golenkova.png" alt="">
+						</li>
+						<li class="partners__item">
+							<img src="img/partners/logo-abnicum.png" alt="">
+						</li>
+						<li class="partners__item">
+							<img src="img/partners/logo-bao.png" alt="">
+						</li>
+						<li class="partners__item">
+							<img src="img/partners/logo-mf.png" alt="">
+						</li>
+						<li class="partners__item">
+							<img src="img/partners/logo-afrodita.png" alt="">
+						</li>
+					</ul>
+				
+				</div>
+				<div class="partners__arrow next js-logo-next">►</div>
+			</div>
+
+			<div class="btn-block">
+				<a href="#" class="btn-sand partners__btn">СТАТЬ ПАРТНЕРОМ</a>
+				
+			</div>
+		</div>
+
+		<!-- *************************** БЛОК ФОТОГАЛЕРЕЯ *************************************** -->
+		<div class="separator"></div>
+		<div class="main-galery-bg">
+			<div class="main-galery">
+				<h2>ФОТОГАЛЕРЕЯ</h2>
+			</div>
+			<div class="main-galery">
+				<div class="main-galery__arrow prev js-photo-prev">◄</div>
+				<div class="main-galery__photo-wrapper">
+					<ul class="main-galery__photo-list">
+						<li class="main-galery__photo-item">
+							<img src="img/photo/photo-1.png" alt="">
+						</li>						
+					</ul>					
+				</div>
+				<div class="main-galery__arrow next js-photo-next">►</div>
+			</div>			
+		</div>
+		<div class="btn-block">
+			<a href="#" class="btn-sand main-galery__btn">Смотреть все фотоотчеты</a>			
+		</div>
+
+		<!-- *************************** БЛОК ПОДПИСКА НА РАССЫЛКУ *************************************** -->
+		<div class="separator"></div>
+		<div class="separator"></div>
+		<div class="subs">
+			<div class="subs__text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris</p>
+				<p>molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut,</p>
+ 				<p>mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius </p>
+			</div>
+			<form class="subs__form" id="subs" action="" method="post">
+				<p class="subs__form-title">Получайте новости от <span>РЕНОМЕ</span></p>
+				<input class="user-input subs__user-input" type="email" name="user-mail" placeholder="Ваш E-mail" required>
+				<button class="btn-beige subs__btn">Подписаться</button>
+			</form>
+		</div>
+
+
+		<!-- **************************** БЛОК СОЦСЕТЕЙ ***********************************- -->			
+			<div class="separator"></div>
+			<div class="main-social">				
+				<h2>Подпишись на наши обновления в социальных сетях</h2>
+				<div class="social-networks">
+							
+					<div class="social-networks__vk ">	
+						<script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
+						<!-- VK Widget -->
+						<div id="vk_groups"></div>
+							<script type="text/javascript">
+							VK.Widgets.Group("vk_groups", {mode: 4, width: "280", height: "400"}, -335298318);
+							</script>
+					</div>
+
+					<div class="social-networks__inst" id="">
+						<!-- Без профиля -->
+						<!--По умолчанию
+				<iframe src='inwidget/index.php?width=280&inline=3&view=9' scrolling='no' frameborder='no' style='border:none;width:280px;height:400px;overflow:hidden;'></iframe>-->
+					</div>
+							
+
+					<div class="social-networks__fb ">
+						<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="280px" data-height="400px" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+					</div>
+						
+				</div>
+			</div>
+
+			<div class="separator"></div>
 
 	<!-- *************************** БЛОК ПОДВАЛ***************************************- -->	
 	</div> <!-- end wrapper-y -->	
 
-	<footer  class="page-footer">
+	<footer class="page-footer-bg">
+		<div class="page-footer">
+			<div class="page-header__contact left">
+				<p class="page-header__contact-address">г. Новосибирск,<br>ул. Крылова 7/1, оф. 7</p>
+				<a href="#" class="link">Посмотреть на карте</a>
+			</div>
+			<div class="page-footer__logo">
+				<a href="index.html"><img src="img/logo.png" alt="«Реноме»"></a>			
+			</div>
+			<div class="page-header__contact right">
+				<p class="page-header__contact-phone">+7 (383) 286-69-96</p>
+				<p class="page-header__contact-social">
+					<div class="social-block">
+						<a href="#" target="_blank" class="social-block__item social-block--fb">facebook</a>
+						<a href="#" target="_blank" class="social-block__item social-block--vk">vk</a>
+						<a href="#" target="_blank" class="social-block__item social-block--inst">instagram</a>
+						<a href="#" target="_blank" class="social-block__item social-block--tw">twitter</a>
+					</div>
+				</p>
+			</div>
+		</div>
 
 	</footer>
 
@@ -453,7 +614,7 @@
 						<li><a href="gallery.html">Фотогалерея</a></li>
 						<li><a href="lease.html">Аренда</a></li>
 						<li><a href="area.html">Пространство</a></li>
-						<li><a href="contact.html">Контакты</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
 				</div>
 			</nav>

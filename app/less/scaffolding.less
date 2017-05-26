@@ -38,6 +38,12 @@ h1, h2 {
 	padding: 0;
 }
 
+h2.head-page {
+	.palatino(2.5rem);
+	color: #000000;
+	text-align: left;
+}
+
 
 h1 { 
 	font-size: 0;
@@ -82,6 +88,8 @@ hr {
 	text-transform: uppercase;
 }
 
+
+
 img {
 	max-width: 100%;
 	width: auto;
@@ -89,7 +97,7 @@ img {
 	vertical-align: bottom;
 }
 
-fieldset {
+fieldset, figure {
 	border: none;
 	margin: 0;
 	padding: 0;
@@ -105,13 +113,27 @@ a {
   text-decoration: none;
 }
 
+.hr-beige {
+	width: 100%;
+	color: @color-filter;
+	background-color: @color-filter;
+	border:0px none;
+	border-width:0;
+	height:2px;
+	
+	margin-bottom: 2.5rem;
+}
+
 .frame-transporent(@size, @color) {
 	outline: @size solid @color;
 	outline-offset: -@size;
 	overflow: hidden;
 }
 
-
+.img-circle {
+	border-radius: 50%;
+	overflow: hidden;
+}
 .ico-before(@x, @y) {
 
 	&:before {
@@ -176,7 +198,7 @@ a {
 	margin: 0 auto;
 	width: 75%;
 	height: 1px;
-	border: 1px solid #e1dccc;
+	border-top: 1px solid #e1dccc;
 }
 
 .container-right() {
@@ -247,6 +269,12 @@ a {
 	h2 {
 		.palatino(1.125rem);
 	}
+
+	h2.head-page {
+		.palatino(1.125rem);
+		text-align: center;
+	}
+
 	h3 {
 		.gotham(1.2rem);
 	}

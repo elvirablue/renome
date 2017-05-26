@@ -1,0 +1,147 @@
+.contacts {
+	.container-fluid();
+	padding-top: 3rem;
+
+	.contacts-flex {		
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	&__list {
+		display: block;
+		padding: 1rem 0; 
+
+		flex-basis: 40%;
+		order: 1;
+	}	
+
+	&__value {
+		display: block;
+		padding-top: 0.5rem;
+	}
+
+	&__title {
+		display: block;
+		padding-top: 2rem;
+		color: @color-main;
+	}
+
+	&__item-phone,
+	&__item-mail {
+		display: inline-block;
+		vertical-align: top;
+		width: 48%;
+	}
+
+	&__social-block {
+		display: block;
+		width: auto;
+		text-align: left;
+
+		a {
+			display: block;
+			width: auto;
+			color: @color-black-text;
+		}
+
+		a:hover {
+			color: @color-main;
+		}
+
+		.social-block__item {
+			display: inline-block;
+			vertical-align: middle;			
+			margin-right: 1rem;
+		}
+
+		.social-block__item span {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 1rem;
+			color: @color-black-text;
+		}
+	}
+
+	&__map-bg {
+		display: block;
+		width: 100%;
+		height: auto;
+		min-height: 30rem;
+		padding: 1.5rem;
+		margin-bottom: -2rem;
+		background: url("../img/monogram-top-left.png") 0 0 no-repeat,
+					url("../img/monogram-bottom-right.png") 100% 100% no-repeat;
+		background-size: auto;
+		flex-basis: 60%;
+		order: 2;
+	}
+
+	&__map {
+		display: block;
+		width: 100%;
+		height: 100%;
+		min-height: 27rem;
+		border: 4px solid #f2ebd7;
+	}
+}
+
+@media @tablet-widths {
+	.contacts__map-bg {
+		flex-basis: 100%;
+		order: 1;
+	}
+
+	.contacts__list {
+		display: flex;
+		flex-flow: column wrap;
+		max-height: 15rem;
+		padding: 2rem;
+		text-align: left;
+
+		flex-basis: 100%;
+		order: 2;
+	} 
+
+	.contacts__item-address {
+		width: 52%;		
+		order: 3;
+	}
+
+	.contacts__item-social {
+		width: 45%;
+		order: 1;
+	}
+
+	.contacts__item-phone-mail {
+		width: 52%;
+		order: 2;
+	}
+}
+
+@media @mobil-widths {
+	.contacts__map-bg {
+		background-image: none;
+		padding: 1.5rem 0;
+	}
+
+	.contacts__list {		
+		flex-flow: column nowrap;
+		max-height: 40rem;
+		padding: 2rem 0;
+	}
+
+	.contacts__item-address {
+		width: 100%;		
+		order: 1;
+	}
+
+	.contacts__item-social {
+		width: 100%;
+		order: 3;
+	}
+
+	.contacts__item-phone-mail {
+		width: 100%;
+		order: 2;
+	}
+}

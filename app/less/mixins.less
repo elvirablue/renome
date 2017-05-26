@@ -1,8 +1,10 @@
 @import "variables.less";
 @import "scaffolding.less";
 @import "blocks/btn.less";
+@import "blocks/user-input.less";
 @import "blocks/first-screen.less";
 @import "blocks/page-header.less";
+@import "blocks/page-footer.less";
 @import "blocks/social-block.less";
 @import "blocks/main-nav.less";
 @import "blocks/main-events.less";
@@ -11,6 +13,18 @@
 @import "blocks/renome.less";
 @import "blocks/calendar.less";
 @import "blocks/reviews.less";
+@import "blocks/main-pressa.less";
+@import "blocks/pressa.less";
+@import "blocks/partners.less";
+@import "blocks/main-galery.less";
+@import "blocks/subs.less";
+@import "blocks/main-social.less";
+@import "blocks/filter.less";
+@import "blocks/event.less";
+@import "blocks/publications.less";
+@import "blocks/about.less";
+@import "blocks/publication.less";
+@import "blocks/contacts.less";
 
 .hidden {
 	display: none;
@@ -73,5 +87,26 @@
 .gotham(@size) { 
   font-family: "GothamProRegular", Arial, sans-serif;
   font-size: @size; 
+}
+
+.text-content-inner  {
+	.clearfix();
+	text-align: justify;
+
+	p {
+		color: @color-black-text; 
+		padding: 0.5rem 0;
+		text-indent: 1rem;
+	}
+
+	hr {
+		width: 100%;
+		color: @color-filter;
+		background-color: @color-filter;
+		border:0px none;
+		border-width:0;
+		height:2px;		
+		margin: 1rem 0;
+	}
 }
 

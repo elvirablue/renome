@@ -76,7 +76,7 @@
 }
 	
 @media @desktop-widths-only {
-	.renome-block:hover {
+	.main-renome .renome-block:hover {
 		.renome-block__content {
 			background-color: rgba(248, 246, 244, 0.7);
 			border-color: rgb(195, 184, 158);
@@ -90,8 +90,9 @@
 
 }
 
+
 @media @tablet-widths and (min-width: 780px) {
-	.renome-block {
+	.main-renome .renome-block {
 		display: block;
 		margin: 0 auto;
 		width: 46rem;		
@@ -102,7 +103,7 @@
 		}
 	}
 
-	.renome-block:nth-child(even) {
+	.main-renome .renome-block:nth-child(even) {
 		h3 {
 			padding: 0;
 			text-align: left;
@@ -120,7 +121,7 @@
 		}
 	}
 
-	.renome-block:nth-child(odd)  {
+	.main-renome .renome-block:nth-child(odd)  {
 		h3 {
 			padding: 0;
 			text-align: right;
@@ -145,7 +146,7 @@
 }
 
 @media @mobil-widths {
-	.renome-block {
+	.main-renome .renome-block {
 		display: block;
 		width: 90vw;
 		margin: 0 auto;
@@ -172,7 +173,7 @@
 		
 	}
 
-	.renome-block:nth-child(n) {
+	.main-renome .renome-block:nth-child(n) {
 		.renome-block__content-btn {
 			text-align: left;
 			padding: 0;
@@ -181,3 +182,55 @@
 		}
 	}
 }
+
+.renome-schedule {
+	.renome-block {
+    	display: block;
+    	margin: 0 auto;
+    	width: 100%;
+    	height: auto;
+    	padding: 1rem 0;
+    	cursor: default;
+		
+		.renome-block__img-wr {
+			display: inline-block;
+			vertical-align: top;
+			width: 30%;
+			
+		}
+
+    	.renome-block__content {
+    	    display: inline-block;
+			vertical-align: top;
+			position: relative;
+			top: auto;
+			left: auto;
+			right: auto;
+    	    width: 60%;
+    	    height: auto;
+    	    padding-top: 0;
+    	    opacity: 1;
+    	}
+
+    	.renome-block__content-text {
+    		opacity: 1;
+    		height: auto;
+    	}
+    	
+    	.renome-block__content-btn {
+    		display: none;
+    	}
+    }
+
+    @media @mobil-widths {
+    	.renome-block {
+    		.renome-block__img-wr {
+    			display: none;
+    		}
+
+    		.renome-block__content {
+    			width: 100%;
+    		}
+    	}
+	}
+} 

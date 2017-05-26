@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>  
+	<meta charset="UTF-8">
+	<title>«Реноме» - пространство</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/venders/normalize.css">
+	<link rel="stylesheet" href="css/stylename.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="stylesheet" href="css/venders/animate.css">
+	<link rel="stylesheet" href="css/simple.css">
+
+	<script src="js/venders/lory.min.js"></script>
+	<!--<script src="js/sliders.js"></script>-->
+
+	<!-- jQuery -->
+	<script src="js/venders/jquery-1.12.4.js"></script>
+	<script src="js/venders/jquery.maskedinput.js"></script>
+	<script src="js/venders/jquery.calendar-widget.js"></script>
+
+	
+	<link rel="stylesheet" href="css/venders/jquery.arcticmodal-0.3.css">	
+	<script src="js/venders/jquery.arcticmodal-0.3.min.js"></script>
+	<!--[if lte IE 9]>
+	    <script src="oldies/oldies.js" charset="utf-8"></script>
+	    <style>
+	       .wrapper-x {display: none;}	       
+	    </style>
+	 <![endif]-->
+</head> 
+<body>
+
+
+<div class="wrapper-x">
+	<div class="wrapper-y">
+	<!-- *************************** ШАПКА ***************************************- -->
+		<header class="page-header">
+			<div class="page-header__contact left">
+				<p class="page-header__contact-address">г. Новосибирск,<br>ул. Крылова 7/1, оф. 7</p>
+				<a href="#" class="link">Посмотреть на карте</a>
+			</div>
+			<div class="page-header__logo">
+				<a href="index.html"><img src="img/logo.png" alt="«Реноме»"></a>			
+			</div>
+			<div class="page-header__contact right">
+				<p class="page-header__contact-phone">+7 (383) 286-69-96</p>
+				<p class="page-header__contact-social">
+					<div class="social-block">
+						<a href="#" target="_blank" class="social-block__item social-block--fb">facebook</a>
+						<a href="#" target="_blank" class="social-block__item social-block--vk">vk</a>
+						<a href="#" target="_blank" class="social-block__item social-block--inst">instagram</a>
+						<a href="#" target="_blank" class="social-block__item social-block--tw">twitter</a>
+					</div>
+				</p>
+			</div>
+		</header>
+
+	<!-- *************************** БЛОК МЕНЮ ***************************************- -->
+		<div class="main-nav-block main-nav--closed">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<div class="main-nav-bg"></div>	
+			<nav class="main-nav">			
+				<div class="main-nav__wrapper">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li class="active"><a>Расписание</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="gallery.html">Фотогалерея</a></li>
+						<li><a href="lease.html">Аренда</a></li>
+						<li><a href="area.html">Пространство</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+	<!-- *************************** ПЕРВЫЙ ЭКРАН ***************************************- -->
+		<div class="first-screen-bg first-screen-bg--schedule">
+			<div class="first-screen first-screen--schedule">
+				<div class="filter">
+					<div class="filter__title">
+						Выберите категорию:
+					</div>
+					<ul class="filter__list">
+						<li><a href="#">Все</a></li>
+						<li class="active"><a href="#">Бизнес-тренинги</a></li>
+						<li><a href="#">Личностный рост</a></li>
+						<li><a href="#">Телесные практики</a></li>
+						<li><a href="#">Живая кухня</a></li>
+						<li><a href="#">Женский клуб</a></li>
+					</ul>					
+				</div>
+				<div class="renome-schedule">
+					<!--блок категория - НАЧАЛО-->
+					<div class="renome-block">
+						<div class="renome-block__img-wr">
+							<img src="img/renome1.png" alt="">
+						</div>
+						<div class="renome-block__content">
+							<h3>Бизнес-тренинги</h3>
+							<p class="renome-block__content-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+							</p>
+							<p class="renome-block__content-btn">
+								<a href="#" class="btn-transparent-dark renome-block__content-btn-more">Подробнее</a>
+								<a href="#" class="btn-transparent-dark renome-block__content-btn-calendar"></a>
+							</p>
+						</div>
+					</div>
+					<!--блок категория - КОНЕЦ-->
+				</div>
+
+				<!-- блок календарь НАЧАЛО -->
+				<div class="calendar-bg-decor">
+					<div class="calendar-wrapper">
+						<div class="calendar" id="calendar">						
+												
+						</div>
+					
+						<div class="calendar-conventions">
+							<span>
+								<i class="circle busines"></i>
+								Бизнес-тренинги
+							</span>
+							<span>
+								<i class="circle trening"></i>
+								Телесные практики
+							</span>
+							<span>
+								<i class="circle women"></i>
+								Женский клуб
+							</span>							
+							<span>
+								<i class="circle kitchen"></i>
+								Живая кухня
+							</span>
+							<span>
+								<i class="circle evolution"></i>
+								Личностный рост
+							</span>
+							<span>
+								<i class="circle photo"></i>
+								Интерьерная фотосъемка
+							</span>
+						</div>	
+					</div>
+				</div>
+				<!-- блок календарь КОНЕЦ -->
+										
+			</div>			
+		</div>
+
+	<!-- *************************** БЛОК БЛИЖАЙШИЕ СОБЫТИЯ ПО КАТЕГОРИИ ***************************************- -->
+		<div class="separator"></div>
+		<div class="main-events-bg main-events-bg--schedule">
+			<div class="main-events schedule">
+				<h2>Ближайшие события по кaтегории Бизнес-тренинги</h2>			
+
+				<div class="main-events__block-prev">
+					<div class="event-prev">
+						<div class="event-prev__arrow prev js-ev-prev">◄</div>
+						<div class="event-prev-wrapper">
+							<ul class="event-prev__list">
+								<li class="event-prev__item ">
+									<div class="event-prev__item-flex">
+										<div class="event-prev__img-wr">
+											<img src="img/events/event2.jpg" alt="">
+										</div>
+										<div class="event-prev__content-wr">
+											<h5>Заголовок события</h5>
+											<span class="event-prev__content-date">
+												01.01.2017г.
+											</span>
+											<a href="#" class="btn-transparent-light event-prev__content-btn">
+												Читать полностью
+											</a>
+										</div>	
+									</div>												
+								</li>
+								<li class="event-prev__item ">
+									<div class="event-prev__item-flex">
+										<div class="event-prev__img-wr">
+											<img src="img/events/event3.jpg" alt="">
+										</div>
+										<div class="event-prev__content-wr">
+											<h5>Заголовок события события Заголовок события Заголовок события события</h5>				
+											<span class="event-prev__content-date">
+												01.01.2017г.
+											</span>
+											<a href="#" class="btn-transparent-light event-prev__content-btn">
+												Читать полностью
+											</a>
+										</div>	
+									</div>												
+								</li>
+								<li class="event-prev__item ">
+									<div class="event-prev__item-flex">
+										<div class="event-prev__img-wr">
+											<img src="img/events/event4.jpg" alt="">
+										</div>
+										<div class="event-prev__content-wr">
+											<h5>Заголовок события</h5>
+											<span class="event-prev__content-date">
+												01.01.2017г.
+											</span>
+											<a href="#" class="btn-transparent-light event-prev__content-btn">
+												Читать полностью
+											</a>
+										</div>	
+									</div>												
+								</li>
+								<li class="event-prev__item ">
+									<div class="event-prev__item-flex">
+										<div class="event-prev__img-wr">
+											<img src="img/events/event6.jpg" alt="">
+										</div>
+										<div class="event-prev__content-wr">
+											<h5>Заголовок события</h5>
+											<span class="event-prev__content-date">
+												01.01.2017г.
+											</span>
+											<a href="#" class="btn-transparent-light event-prev__content-btn">
+												Читать полностью
+											</a>
+										</div>	
+									</div>												
+								</li>
+								<li class="event-prev__item ">
+									<div class="event-prev__item-flex">
+										<div class="event-prev__img-wr">
+											<img src="img/events/event7.jpg" alt="">
+										</div>
+										<div class="event-prev__content-wr">
+											<h5>Заголовок события события Заголовок события Заголовок события события</h5>				
+											<span class="event-prev__content-date">
+												01.01.2017г.
+											</span>
+											<a href="#" class="btn-transparent-light event-prev__content-btn">
+												Читать полностью
+											</a>
+										</div>	
+									</div>												
+								</li>
+								<li class="event-prev__item ">
+									<div class="event-prev__item-flex">
+										<div class="event-prev__img-wr">
+											<img src="img/events/event5.jpg" alt="">
+										</div>
+										<div class="event-prev__content-wr">
+											<h5>Заголовок события</h5>
+											<span class="event-prev__content-date">
+												01.01.2017г.
+											</span>
+											<a href="#" class="btn-transparent-light event-prev__content-btn">
+												Читать полностью
+											</a>
+										</div>	
+									</div>												
+								</li>
+							</ul>
+							
+						</div>						
+						<div class="event-prev__arrow next js-ev-next">►</div>	
+					</div>			
+				</div>
+			</div>			
+		</div>
+
+	<div class="separator"></div>
+	<div class="separator"></div>
+	<!-- *************************** БЛОК ПОДВАЛ***************************************- -->	
+	</div> <!-- end wrapper-y -->	
+
+	<footer class="page-footer-bg">
+		<div class="page-footer">
+			<div class="page-header__contact left">
+				<p class="page-header__contact-address">г. Новосибирск,<br>ул. Крылова 7/1, оф. 7</p>
+				<a href="#" class="link">Посмотреть на карте</a>
+			</div>
+			<div class="page-footer__logo">
+				<a href="index.html"><img src="img/logo.png" alt="«Реноме»"></a>			
+			</div>
+			<div class="page-header__contact right">
+				<p class="page-header__contact-phone">+7 (383) 286-69-96</p>
+				<p class="page-header__contact-social">
+					<div class="social-block">
+						<a href="#" target="_blank" class="social-block__item social-block--fb">facebook</a>
+						<a href="#" target="_blank" class="social-block__item social-block--vk">vk</a>
+						<a href="#" target="_blank" class="social-block__item social-block--inst">instagram</a>
+						<a href="#" target="_blank" class="social-block__item social-block--tw">twitter</a>
+					</div>
+				</p>
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- ************** БЛОК ПРИЛИПАЮЩАЯ НАВИГАЦИЯ ПРИ СКРОЛЛЕ ******************- -->
+	<div class="main-nav-scroll">
+		<div class="main-nav-block main-nav--closed">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+		
+			<nav class="main-nav">			
+				<div class="main-nav__wrapper">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li class="active"><a href="">Расписание</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="gallery.html">Фотогалерея</a></li>
+						<li><a href="lease.html">Аренда</a></li>
+						<li><a href="area.html">Пространство</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+<!-- ************** БЛОК МОДАЛЬНЫЕ ОКНА ******************- -->
+
+
+<!-- ********************************- -->
+</div> <!-- end wrapper-x -->
+
+<script src="js/menu.js"> </script>
+<!--<script src="js/prev-video.js"> </script>		
+	
+<script src="js/modal.js"> </script>
+<script src="js/post.js"> </script>
+-->
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+.main-pressa {
+	.container-fluid();
+
+	
+
+	&__wrapper {
+		display: block;
+		margin: 3rem auto 0;
+		width: 60rem;
+		height: 25rem;
+		overflow: hidden;
+	}
+}
+
+@media @tablet-widths {
+	.main-pressa__wrapper {
+		width: 37.5rem;
+		margin: 2rem auto 0;
+	}
+}
+
+@media @mobil-widths {
+	.main-pressa__wrapper {
+		width: 17.5rem;
+	}
+
+	.main-pressa {
+		.btn-block {
+			padding: 0;
+		}
+	}
+}

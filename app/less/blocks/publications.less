@@ -1,0 +1,54 @@
+.publications {
+	.container-fluid();
+
+	.filter {
+		margin-top: 2rem;
+		padding-left: 1rem;
+	}
+
+	
+
+	.main-pressa__wrapper {
+		height: auto;
+
+		.pressa {
+			width: 100%;
+			padding-top: 2rem;
+			padding-left: 1rem;
+
+			&__item {
+				margin-bottom: 5rem;
+			}
+
+			&__item:hover:before {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+@media @desktop-widths-only {
+	.main-pressa__wrapper .pressa__item:hover:before {
+		display: block;
+		position: absolute;
+		z-index: 100;
+		top: -1.5rem;				
+		left: -0.75rem;
+		content: "";
+		width: 108%;
+		max-width: 20rem;
+		min-width: 16rem;
+		height: 17.5rem; 
+		background: url("../img/about-hover.png") 0 0 no-repeat;
+		background-size: 100% 100%;
+		cursor: pointer;
+	}
+}
+
+@media @mobil-widths {
+	.publications {
+		.main-pressa__wrapper .pressa {
+			padding-left: 0;
+		}
+	}
+}

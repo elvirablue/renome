@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>  
+	<meta charset="UTF-8">
+	<title>«Реноме» - пространство</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/venders/normalize.css">
+	<link rel="stylesheet" href="css/stylename.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="stylesheet" href="css/venders/animate.css">
+	<link rel="stylesheet" href="css/simple.css">
+
+	<script src="js/venders/lory.min.js"></script>
+	<!--<script src="js/sliders.js"></script>-->
+
+	<!-- jQuery -->
+	<script src="js/venders/jquery-1.12.4.js"></script>
+	<script src="js/venders/jquery.maskedinput.js"></script>
+	<script src="js/venders/jquery.calendar-widget.js"></script>
+
+	
+	<link rel="stylesheet" href="css/venders/jquery.arcticmodal-0.3.css">	
+	<script src="js/venders/jquery.arcticmodal-0.3.min.js"></script>
+
+	<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+	<script type="text/javascript">
+            var map;
+
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [55.041193,82.918783],
+                    zoom: 16
+                });
+
+                DG.marker([55.041193,82.918783]).addTo(map).bindPopup('Пространство «РЕНОМЕ»');
+            });
+        </script>
+	<!--[if lte IE 9]>
+	    <script src="oldies/oldies.js" charset="utf-8"></script>
+	    <style>
+	       .wrapper-x {display: none;}	       
+	    </style>
+	 <![endif]-->
+</head> 
+<body>
+
+
+<div class="wrapper-x">
+	<div class="wrapper-y">
+	<!-- *************************** ШАПКА ***************************************- -->
+		<header class="page-header">
+			<div class="page-header__contact left">
+				<p class="page-header__contact-address">г. Новосибирск,<br>ул. Крылова 7/1, оф. 7</p>
+				<a href="#" class="link">Посмотреть на карте</a>
+			</div>
+			<div class="page-header__logo">
+				<a href="index.html"><img src="img/logo.png" alt="«Реноме»"></a>			
+			</div>
+			<div class="page-header__contact right">
+				<p class="page-header__contact-phone">+7 (383) 286-69-96</p>
+				<p class="page-header__contact-social">
+					<div class="social-block">
+						<a href="#" target="_blank" class="social-block__item social-block--fb">facebook</a>
+						<a href="#" target="_blank" class="social-block__item social-block--vk">vk</a>
+						<a href="#" target="_blank" class="social-block__item social-block--inst">instagram</a>
+						<a href="#" target="_blank" class="social-block__item social-block--tw">twitter</a>
+					</div>
+				</p>
+			</div>
+		</header>
+
+	<!-- *************************** БЛОК МЕНЮ ***************************************- -->
+		<div class="main-nav-block main-nav--closed">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<div class="main-nav-bg"></div>	
+			<nav class="main-nav">			
+				<div class="main-nav__wrapper">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="schedule.html">Расписание</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="gallery.html">Фотогалерея</a></li>
+						<li><a href="lease.html">Аренда</a></li>
+						<li><a href="area.html">Пространство</a></li>
+						<li class="active"><a>Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+	<!-- *************************** ПЕРВЫЙ ЭКРАН ***************************************- -->
+		<div class="contacts">			
+			<h2 class="head-page">Контакты</h2>
+			<div class="contacts-flex">
+				<div class="contacts__list">
+					<div class="contacts__item-address">
+						<p class="contacts__title">Адрес:</p>
+						<p class="contacts__value">г. Новосибирск, ул. Крылова 7/1, оф. 7</p>
+					</div>
+					<div class="contacts__item-social">
+						<p class="contacts__title">Социальные сети:</p>
+						<p class="social-block contacts__social-block">
+							<a href="#" target="_blank" class="link"><span class="social-block__item social-block--fb"></span>
+							www.facebook.com</a>
+							<a href="#" target="_blank" class="link"><span class="social-block__item social-block--vk"></span>
+							vk.com/renomensk</a>
+							<a href="#" target="_blank" class="link"><span class="social-block__item social-block--inst"></span>
+							www.instagram.com/renome7</a>
+							<a href="#" target="_blank" class="link"><span class="social-block__item social-block--tw"></span>
+							twitter.com/RENOME7</a>
+						</p>
+					</div>
+					<div class="contacts__item-phone-mail">
+						<div class="contacts__item-phone">
+							<p class="contacts__title">Телефон:</p>
+							<p class="contacts__value">+7 (383) 286-69-96</p>
+						</div>
+						<div class="contacts__item-mail">
+							<p class="contacts__title">E-mail:</p>
+							<p class="contacts__value">почта@mail.ru7</p>
+						</div>
+						
+					</div>
+				</div>
+				<div class="contacts__map-bg">
+					<div class="contacts__map" id="map"></div>
+				</div>
+				
+			</div>
+				
+		</div>
+
+	
+	<div class="separator"></div>
+	<div class="separator"></div>
+	<!-- *************************** БЛОК ПОДВАЛ***************************************- -->	
+	</div> <!-- end wrapper-y -->	
+
+	<footer class="page-footer-bg">
+		<div class="page-footer">
+			<div class="page-header__contact left">
+				<p class="page-header__contact-address">г. Новосибирск,<br>ул. Крылова 7/1, оф. 7</p>
+				<a href="#" class="link">Посмотреть на карте</a>
+			</div>
+			<div class="page-footer__logo">
+				<a href="index.html"><img src="img/logo.png" alt="«Реноме»"></a>			
+			</div>
+			<div class="page-header__contact right">
+				<p class="page-header__contact-phone">+7 (383) 286-69-96</p>
+				<p class="page-header__contact-social">
+					<div class="social-block">
+						<a href="#" target="_blank" class="social-block__item social-block--fb">facebook</a>
+						<a href="#" target="_blank" class="social-block__item social-block--vk">vk</a>
+						<a href="#" target="_blank" class="social-block__item social-block--inst">instagram</a>
+						<a href="#" target="_blank" class="social-block__item social-block--tw">twitter</a>
+					</div>
+				</p>
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- ************** БЛОК ПРИЛИПАЮЩАЯ НАВИГАЦИЯ ПРИ СКРОЛЛЕ ******************- -->
+	<div class="main-nav-scroll">
+		<div class="main-nav-block main-nav--closed">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+		
+			<nav class="main-nav">			
+				<div class="main-nav__wrapper">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li class="active"><a>О нас</a></li>
+						<li><a href="schedule.html">Расписание</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="gallery.html">Фотогалерея</a></li>
+						<li><a href="lease.html">Аренда</a></li>
+						<li><a href="area.html">Пространство</a></li>
+						<li><a href="contact.html">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+<!-- ************** БЛОК МОДАЛЬНЫЕ ОКНА ******************- -->
+
+
+<!-- ********************************- -->
+</div> <!-- end wrapper-x -->
+
+<script src="js/menu.js"> </script>
+<!--<script src="js/prev-video.js"> </script>		
+	
+<script src="js/modal.js"> </script>
+<script src="js/post.js"> </script>
+-->
+
+
+</body>
+</html>

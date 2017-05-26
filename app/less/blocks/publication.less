@@ -1,0 +1,114 @@
+.publication {
+	.container-fluid();
+
+	h2 {
+		text-align: left;
+		padding-bottom: 2rem;
+	}
+
+	&__comment {
+		display: block;
+		padding: 0.5rem 0;
+		color: @color-event;
+	}
+
+	&__main-img {
+		width: 274px;
+		height: auto;		
+		position: relative;
+		float: left;
+		margin: 2rem;
+		margin-left: 0;
+		margin-bottom: 6rem;
+
+		img {
+			width: 100%;
+		}
+
+		figcaption {
+			position: absolute;
+			z-index: 100;
+			display: block;
+			bottom: -3rem;
+		}
+	}
+
+	&__last-img {
+		float: right;
+		width: auto;
+		margin: 2rem;
+		margin-right: 0;
+		img {
+			width: 100%;
+		}
+
+	}
+
+	&__main-img:after {
+		display: block;
+		position: absolute;
+		z-index: 100;
+		content: "";
+		bottom: -9px;
+		width: 274px;
+		height: 16px;
+		background: url("../img/shadow-public.png") top center no-repeat;
+		background-size: auto;
+	}
+
+	&__main-img:before {
+		display: block;
+		position: absolute;
+		z-index: 100;
+		content: "";
+		top: 8px;
+		left: -5px;
+		width: 274px;
+		height: 100%;
+		background: url("../img/frame-atop.png") top center no-repeat;
+		background-size: 90% 95%;
+	}
+}
+
+.nav-publication {
+	display: block;
+	width: 100%;
+	text-align: right;
+	padding-top: 2rem;
+
+	span, b {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 1rem;
+		font-size: 2rem;
+		font-weight: bold;
+		color: @color-filter;
+	}
+
+	b {
+		font-weight: normal;
+		margin-top: -0.5rem;
+	}
+
+	span:hover, span.active, span:active {
+		color: @color-main;
+		cursor: pointer;
+	}
+}
+
+@media @mobil-widths {
+	.publication__main-img {
+		float: none;
+		display: block;
+		margin: 1rem auto 4rem;
+	}
+
+	.publication__last-img {
+		display: none;
+	}
+
+	.nav-publication {
+		text-align: center;
+	}
+}
+

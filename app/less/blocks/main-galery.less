@@ -1,0 +1,66 @@
+.main-galery-bg {
+	display: block;
+	width: 100%;
+	background: url("../img/bg-frame-galery.png") center 2rem no-repeat;
+	background-size: auto;
+	padding-bottom: 0.1rem;
+}
+
+.main-galery {
+	.container-fluid();
+	position: relative;
+
+	&__arrow {
+		display: inline-block;
+		position: absolute;
+		z-index: 100;
+		width: 2rem;
+		height: 2rem;
+		top: 50%;
+		margin-top: -1rem;	
+		line-height: 2rem;	
+		cursor: pointer;
+		font-size: 1.5rem;
+	}
+
+	&__arrow.prev {
+		left: 0rem;
+		text-align: left;
+	}
+
+	&__arrow.next {
+		right: 0rem;
+		text-align: right;
+	}
+
+	&__photo-wrapper {
+		display: block;
+		margin: 7.3rem auto;
+		width: 56rem;
+		height: 34.375rem;
+		overflow: hidden;
+	}
+
+	&__photo-list {
+		display: block;
+		width: 100rem;
+		text-align: left;
+		list-style: none;
+	}
+
+	&__photo-item {
+		display: inline-block;
+		vertical-align: top;
+		width: 56rem;
+		height: 34.375rem;
+		overflow: hidden;
+		border-radius: 5px;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__btn {
+		padding-top: 0;
+	}
+}

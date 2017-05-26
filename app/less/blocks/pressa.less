@@ -1,0 +1,81 @@
+.pressa {
+	display: block;
+	width: 100rem;
+	list-style: none;
+	font-size: 0;
+	text-align: left;
+
+	&__item {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 25%;
+		max-width: 18.75rem;
+		min-width: 17.5rem;
+		height: 22rem;
+		margin: 0 1%;
+		/*background: url("../img/bg-smi-item.svg") top center no-repeat;
+		background-size: 70%;*/
+
+		img {
+			width: auto;
+			max-width: 100%;
+			min-width: 15rem;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	&__item--video {
+		background-image: none;
+	}
+
+	&__description {
+		position: absolute;
+		z-index: 100;
+		bottom: 0;
+		width: 100%;
+		padding: 0 1.25rem;
+		text-align: center;
+	}
+
+	&__title {
+		display: block;
+		margin: 1rem auto 0;
+		.palatino(1rem);
+		color: #000000;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__date {
+		display: block;
+		margin: 0 auto 1rem;
+		.palatino(1rem);
+		color: @color-main;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__source {
+		display: block;
+		margin: 0 auto 1rem;
+		.palatino(1rem);
+		color: @color-main;
+		
+		text-align: center;
+	}
+
+	&__link {
+		.muller(1rem);
+	}
+}
+
+@media @mobil-widths {
+	.pressa {
+		&__item {
+			margin: 0;
+			width: 17.5rem;
+		}
+	}
+}
