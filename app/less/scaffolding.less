@@ -43,7 +43,7 @@ h2.head-page {
 	color: #000000;
 	text-align: left;
 }
-
+ 
 
 h1 { 
 	font-size: 0;
@@ -242,11 +242,18 @@ a {
 
 .flamp {
 	.container-fluid();
-	
+	text-align: center;
+
+	&--mobil {
+		display: none;
+		padding-bottom: 3rem;
+	}
+
+
 }
 
 @media @tablet-widths {
-		
+
 }
 
 @media @mobil-widths {
@@ -281,6 +288,9 @@ a {
 	h4 {
 		
 	}	
+
+	.flamp--desktop { display: none;}
+	.flamp--mobil { display: block;}
 	
 }
 
