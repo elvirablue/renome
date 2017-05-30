@@ -25,6 +25,20 @@
 	
 	<link rel="stylesheet" href="css/venders/jquery.arcticmodal-0.3.css">	
 	<script src="js/venders/jquery.arcticmodal-0.3.min.js"></script>
+
+	<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+	<script type="text/javascript">
+            var map;
+
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [55.041193,82.918783],
+                    zoom: 16
+                });
+
+                DG.marker([55.041193,82.918783]).addTo(map).bindPopup('Пространство «РЕНОМЕ»');
+            });
+        </script>
 	<!--[if lte IE 9]>
 	    <script src="oldies/oldies.js" charset="utf-8"></script>
 	    <style>
@@ -69,10 +83,10 @@
 						<li><a href="index.html">Главная</a></li>
 						<li><a href="about.html">О нас</a></li>
 						<li><a href="schedule.html">Расписание</a></li>
-						<li class="active"><a>СМИ о нас</a></li>
+						<li><a href="smi-publications.html">СМИ о нас</a></li>
 						<li><a href="gallery.html">Фотогалерея</a></li>
 						<li><a href="lease.html">Аренда</a></li>
-						<li><a href="area.html">Пространство</a></li>
+						<li class="active"><a>Пространство</a></li>
 						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
 				</div>
@@ -80,95 +94,12 @@
 		</div>
 
 	<!-- *************************** ПЕРВЫЙ ЭКРАН ***************************************- -->
-		<div class="publications">
-			<div class="filter">
-				<div class="filter__title public">
-					Показывать:
-				</div>
-				<ul class="filter__list">
-					<li class="active"><a>все</a></li>
-					<li><a href="#">статьи</a></li>
-					<li><a href="#">видео</a></li>						
-				</ul>					
-			</div>
-
-			<hr class="hr-beige">
-			<h2 class="head-page">СМИ О НАС</h2>
-
-			<div class="main-pressa__wrapper">
-				<ul class="pressa">
-					<a href="publication.html">
-							<li class="pressa__item">							
-								<figure>
-									<img src="img/smi/smi-1.png" alt="">
-									<figcaption class="pressa__description">
-										<span class="pressa__title">Название публикации</span>
-										<span class="pressa__date">01/01/2017</span>
-										<span class="pressa__source">Источник: Название</span>
-									</figcaption>
-								</figure>	
-							</li>						
-						 </a>
-						<a href="publication.html">
-							<li class="pressa__item">							
-								<figure>
-									<img src="img/smi/smi-2.png" alt="">
-									<figcaption class="pressa__description">
-										<span class="pressa__title">Название публикации</span>
-										<span class="pressa__date">01/01/2017</span>
-										<span class="pressa__source">Источник: Название</span>
-									</figcaption>
-								</figure>	
-							</li>						
-						 </a>
-						<a href="publication.html">
-							<li class="pressa__item">							
-								<figure>
-									<img src="img/smi/smi-3.png" alt="">
-									<figcaption class="pressa__description">
-										<span class="pressa__title">Название публикации</span>
-										<span class="pressa__date">01/01/2017</span>
-										<span class="pressa__source">Источник: Название</span>
-									</figcaption>
-								</figure>	
-							</li>						
-						 </a><a href="publication.html">
-							<li class="pressa__item">							
-								<figure>
-									<img src="img/smi/smi-1.png" alt="">
-									<figcaption class="pressa__description">
-										<span class="pressa__title">Название публикации</span>
-										<span class="pressa__date">01/01/2017</span>
-										<span class="pressa__source">Источник: Название</span>
-									</figcaption>
-								</figure>	
-							</li>						
-						 </a>
-						<a href="publication.html">
-							<li class="pressa__item">							
-								<figure>
-									<img src="img/smi/smi-2.png" alt="">
-									<figcaption class="pressa__description">
-										<span class="pressa__title">Название публикации</span>
-										<span class="pressa__date">01/01/2017</span>
-										<span class="pressa__source">Источник: Название</span>
-									</figcaption>
-								</figure>	
-							</li>						
-						 </a>
-						<a href="publication.html">
-							<li class="pressa__item">							
-								<figure>
-									<img src="img/smi/smi-3.png" alt="">
-									<figcaption class="pressa__description">
-										<span class="pressa__title">Название публикации</span>
-										<span class="pressa__date">01/01/2017</span>
-										<span class="pressa__source">Источник: Название</span>
-									</figcaption>
-								</figure>	
-							</li>						
-						 </a> 						
-				</ul>					
+		<div class="site-page">			
+			<h2 class="head-page">Пространство</h2>
+			<div class="text-content-inner">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius </p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius </p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius </p>
 			</div>
 				
 		</div>
@@ -183,7 +114,7 @@
 		<div class="page-footer">
 			<div class="page-header__contact left">
 				<p class="page-header__contact-address">г. Новосибирск,<br>ул. Крылова 7/1, оф. 7</p>
-				<a href="contacts.html" class="link">Посмотреть на карте</a>
+				<a href="#" class="link">Посмотреть на карте</a>
 			</div>
 			<div class="page-footer__logo">
 				<a href="index.html"><img src="img/logo.png" alt="«Реноме»"></a>			
@@ -212,13 +143,13 @@
 				<div class="main-nav__wrapper">
 					<ul>
 						<li><a href="index.html">Главная</a></li>
-						<li class="active"><a>О нас</a></li>
+						<li><a href="about.html">О нас</a></li>
 						<li><a href="schedule.html">Расписание</a></li>
-						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="smi-publications.html">СМИ о нас</a></li>
 						<li><a href="gallery.html">Фотогалерея</a></li>
 						<li><a href="lease.html">Аренда</a></li>
-						<li><a href="area.html">Пространство</a></li>
-						<li><a href="contacts.html">Контакты</a></li>
+						<li class="active"><a>Пространство</a></li>
+						<li><a href="contact.html">Контакты</a></li>
 					</ul>
 				</div>
 			</nav>

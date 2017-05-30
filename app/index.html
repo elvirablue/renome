@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="css/simple.css">
 
 	<script src="js/venders/lory.min.js"></script>
-	<!--<script src="js/sliders.js"></script>-->
+	<script src="js/sliders.js"></script>
 
 	<!-- jQuery -->
 	<script src="js/venders/jquery-1.12.4.js"></script>
@@ -48,7 +48,7 @@
 		<header class="page-header">
 			<div class="page-header__contact left">
 				<p class="page-header__contact-address">г. Новосибирск,<br>ул. Крылова 7/1, оф. 7</p>
-				<a href="#" class="link">Посмотреть на карте</a>
+				<a href="contacts.html" class="link">Посмотреть на карте</a>
 			</div>
 			<div class="page-header__logo">
 				<a href="index.html"><img src="img/logo.png" alt="«Реноме»"></a>			
@@ -76,7 +76,7 @@
 						<li class="active"><a href="">Главная</a></li>
 						<li><a href="about.html">О нас</a></li>
 						<li><a href="schedule.html">Расписание</a></li>
-						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="smi-publications.html">СМИ о нас</a></li>
 						<li><a href="gallery.html">Фотогалерея</a></li>
 						<li><a href="lease.html">Аренда</a></li>
 						<li><a href="area.html">Пространство</a></li>
@@ -428,36 +428,42 @@
 				<h2 class="head-page">СМИ о нас</h2>
 				<div class="main-pressa__wrapper">
 					<ul class="pressa">
-						<li class="pressa__item">
-							<figure>
-								<img src="img/smi/smi-1.png" alt="">
-								<figcaption class="pressa__description">
-									<span class="pressa__title">Название публикации</span>
-									<span class="pressa__date">01/01/2017</span>
-									<span class="pressa__source">Источник: Название</span>
-								</figcaption>
-							</figure>							
-						</li> 
-						<li class="pressa__item pressa__item--video">
-							<figure>
-								<img src="img/smi/smi-2.png" alt="">
-								<figcaption class="pressa__description">
-									<span class="pressa__title">Название публикации</span>
-									<span class="pressa__date">01/01/2017</span>
-									<span class="pressa__source">Источник: Название</span>
-								</figcaption>
-							</figure>							
-						</li>
-						<li class="pressa__item">
-							<figure>
-								<img src="img/smi/smi-3.png" alt="">
-								<figcaption class="pressa__description">
-									<span class="pressa__title">Название публикации</span>
-									<span class="pressa__date">01/01/2017</span>
-									<span class="pressa__source">Источник: Название</span>
-								</figcaption>
-							</figure>							
-						</li>						
+						<a href="publication.html">
+							<li class="pressa__item">							
+								<figure>
+									<img src="img/smi/smi-1.png" alt="">
+									<figcaption class="pressa__description">
+										<span class="pressa__title">Название публикации</span>
+										<span class="pressa__date">01/01/2017</span>
+										<span class="pressa__source">Источник: Название</span>
+									</figcaption>
+								</figure>	
+							</li>						
+						 </a>
+						<a href="publication.html">
+							<li class="pressa__item">							
+								<figure>
+									<img src="img/smi/smi-2.png" alt="">
+									<figcaption class="pressa__description">
+										<span class="pressa__title">Название публикации</span>
+										<span class="pressa__date">01/01/2017</span>
+										<span class="pressa__source">Источник: Название</span>
+									</figcaption>
+								</figure>	
+							</li>						
+						 </a>
+						<a href="publication.html">
+							<li class="pressa__item">							
+								<figure>
+									<img src="img/smi/smi-3.png" alt="">
+									<figcaption class="pressa__description">
+										<span class="pressa__title">Название публикации</span>
+										<span class="pressa__date">01/01/2017</span>
+										<span class="pressa__source">Источник: Название</span>
+									</figcaption>
+								</figure>	
+							</li>						
+						 </a>						
 					</ul>					
 				</div>
 
@@ -475,30 +481,40 @@
 		<div class="partners">
 			<h2>Наши партнеры</h2>
 		</div>
-		<div class="partners-bg">
-			<div class="partners">
-				<div class="partners__arrow prev js-logo-prev">◄</div>
+		<div class="partners-bg partners_slider js_slider js_variablewlidth">
+			<div class="partners js_frame">
+				<div class="partners__arrow prev js-logo-prev js_prev">◄</div>
 				<div class="partners__wrapper">
-					<ul class="partners__list">
-						<li class="partners__item">
+					<ul class="partners__list js_slides">
+						<li class="js_slide"></li>
+						<li class="partners__item js_slide">
 							<img src="img/partners/logo-golenkova.png" alt="">
 						</li>
-						<li class="partners__item">
+						<li class="partners__item js_slide">
 							<img src="img/partners/logo-abnicum.png" alt="">
 						</li>
-						<li class="partners__item">
+						<li class="partners__item js_slide">
 							<img src="img/partners/logo-bao.png" alt="">
 						</li>
-						<li class="partners__item">
+						<li class="partners__item js_slide">
 							<img src="img/partners/logo-mf.png" alt="">
 						</li>
-						<li class="partners__item">
+						<li class="partners__item js_slide">
 							<img src="img/partners/logo-afrodita.png" alt="">
+						</li>
+						<li class="partners__item js_slide">
+							<img src="img/partners/logo-djagannat.png" alt="">
+						</li>
+						<li class="partners__item js_slide">
+							<img src="img/partners/logo-pereladova.png" alt="">
+						</li>
+						<li class="partners__item js_slide">
+							<img src="img/partners/logo-vedanta.png" alt="">
 						</li>
 					</ul>
 				
 				</div>
-				<div class="partners__arrow next js-logo-next">►</div>
+				<div class="partners__arrow next js-logo-next js_next">►</div>
 			</div>
 
 			<div class="btn-block">
@@ -585,7 +601,7 @@
 		<div class="page-footer">
 			<div class="page-header__contact left">
 				<p class="page-header__contact-address">г. Новосибирск,<br>ул. Крылова 7/1, оф. 7</p>
-				<a href="#" class="link">Посмотреть на карте</a>
+				<a href="contacts.html" class="link">Посмотреть на карте</a>
 			</div>
 			<div class="page-footer__logo">
 				<a href="index.html"><img src="img/logo.png" alt="«Реноме»"></a>			
@@ -616,7 +632,7 @@
 						<li class="active"><a href="">Главная</a></li>
 						<li><a href="about.html">О нас</a></li>
 						<li><a href="schedule.html">Расписание</a></li>
-						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="smi-publications.html">СМИ о нас</a></li>
 						<li><a href="gallery.html">Фотогалерея</a></li>
 						<li><a href="lease.html">Аренда</a></li>
 						<li><a href="area.html">Пространство</a></li>

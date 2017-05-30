@@ -825,8 +825,7 @@ a:hover .social-block__item {
 .main-nav__wrapper ul li:active a {
   color: #514215;
 }
-.main-nav__wrapper ul li.active a:before,
-.main-nav__wrapper ul li:active a:before {
+.main-nav__wrapper ul li.active a:before {
   content: "";
   color: #514215;
   font-size: 0rem;
@@ -1815,7 +1814,9 @@ a:hover .social-block__item {
 }
 .pressa {
   display: block;
-  width: 100rem;
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 1rem;
   list-style: none;
   font-size: 0;
   text-align: left;
@@ -1883,6 +1884,7 @@ a:hover .social-block__item {
 @media (max-width: 780px) {
   .pressa__item {
     margin: 0;
+    margin-bottom: 2rem;
     width: 17.5rem;
   }
 }
@@ -1929,6 +1931,7 @@ a:hover .social-block__item {
   display: block;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .partners__arrow {
   display: inline-block;
@@ -1991,6 +1994,14 @@ a:hover .social-block__item {
   .partners h2:after,
   .partners h2:before {
     display: none;
+  }
+  .partners__arrow {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .partners {
+    width: 90%;
   }
 }
 .main-galery-bg {
@@ -2998,6 +3009,26 @@ a:hover .social-block__item {
           box-sizing: border-box;
   padding: 0 0 8rem;
   min-height: 100vh;
+}
+.site-page {
+  width: 100%;
+  max-width: 960px;
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+@media (max-width: 960px) {
+  .site-page {
+    width: 100%;
+  }
+}
+@media (max-width: 780px) {
+  .site-page {
+    width: auto;
+    text-align: center;
+    min-width: 320px;
+    padding: 0 1.2rem;
+  }
 }
 .text-content-inner {
   text-align: justify;
