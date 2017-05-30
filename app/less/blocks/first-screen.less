@@ -11,6 +11,12 @@
 		background-size: auto;
 		height: auto;
 	}
+
+	&--gallery {
+		background: url("../img/bg-big.jpg") top center no-repeat;
+		background-size: auto;
+		height: auto;
+	}
 }
 
 @media @desktop-big-widths-only {
@@ -24,9 +30,11 @@
 	.clearfix();
 	padding: 0;
 
-	&--schedule {
+	&--schedule,
+	&--gallery {
 		padding-top: 4rem;
 	}
+	
 
 	&__img-wr {
 		.frame-transporent(10px, rgba(223, 218, 203, 0.7));
@@ -115,6 +123,10 @@
 		&--schedule {
 			background-image: none;
 			min-height: 33rem;
+		}
+
+		&__report {
+			background-image: none;
 		}	
 	}
 

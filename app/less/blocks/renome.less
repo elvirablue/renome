@@ -76,7 +76,7 @@
 }
 	
 @media @desktop-widths-only {
-	.main-renome .renome-block:hover {
+	.renome-block:hover {
 		.renome-block__content {
 			background-color: rgba(248, 246, 244, 0.7);
 			border-color: rgb(195, 184, 158);
@@ -88,11 +88,23 @@
 		} 
 	}
 
+	.renome-schedule .renome-block:hover {
+		.renome-block__content {
+			background-color: transparent;
+			border-color: transparent;
+  			border-radius: 2px;
+  			box-shadow: none;
+		}
+		.renome-block__content-text {
+			opacity: 1;
+		} 
+	}
+
 }
 
 
 @media @tablet-widths and (min-width: 780px) {
-	.main-renome .renome-block {
+	.renome-block {
 		display: block;
 		margin: 0 auto;
 		width: 46rem;		
@@ -103,7 +115,7 @@
 		}
 	}
 
-	.main-renome .renome-block:nth-child(even) {
+	.renome-block:nth-child(even) {
 		h3 {
 			padding: 0;
 			text-align: left;
@@ -121,7 +133,7 @@
 		}
 	}
 
-	.main-renome .renome-block:nth-child(odd)  {
+	.renome-block:nth-child(odd)  {
 		h3 {
 			padding: 0;
 			text-align: right;
@@ -146,7 +158,7 @@
 }
 
 @media @mobil-widths {
-	.main-renome .renome-block {
+	.renome-block {
 		display: block;
 		width: 90vw;
 		margin: 0 auto;
@@ -173,7 +185,7 @@
 		
 	}
 
-	.main-renome .renome-block:nth-child(n) {
+	.renome-block:nth-child(n) {
 		.renome-block__content-btn {
 			text-align: left;
 			padding: 0;

@@ -1,0 +1,72 @@
+.block-photo {
+		width: 274px;
+		height: auto;		
+		position: relative;
+		display: block;
+		
+
+		img {
+			width: 100%;
+		}
+
+		figcaption {
+			position: absolute;
+			z-index: 100;
+			display: block;
+			bottom: -3rem;
+		}
+
+		&--public {
+			float: left;
+			margin: 2rem;
+			margin-left: 0;
+			margin-bottom: 6rem;
+		}
+
+		&--report {
+			margin: 1rem auto;
+
+			figcaption {
+				.palatino(1rem);
+				color: #ffffff;
+				text-transform: uppercase;
+				text-align: left;
+				bottom: 2rem;
+				left: 2rem;
+
+			}
+		}
+	}
+
+.block-photo:after {
+		display: block;
+		position: absolute;
+		z-index: 100;
+		content: "";
+		bottom: -9px;
+		width: 274px;
+		height: 16px;
+		background: url("../img/shadow-public.png") top center no-repeat;
+		background-size: auto;
+	}
+
+.block-photo:before {
+		display: block;
+		position: absolute;
+		z-index: 100;
+		content: "";
+		top: 8px;
+		left: -5px;
+		width: 274px;
+		height: 100%;
+		background: url("../img/frame-atop.png") top center no-repeat;
+		background-size: 90% 95%;
+	}
+
+@media @mobil-widths {
+	.block-photo--public {
+		float: none;
+		display: block;
+		margin: 1rem auto 4rem;
+	}
+}
