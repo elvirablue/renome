@@ -376,6 +376,22 @@ a {
   padding: 0 0.75rem;
   outline: none;
 }
+.control {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 3px 5px 6px 0px rgba(25, 25, 25, 0.15);
+          box-shadow: inset 3px 5px 6px 0px rgba(25, 25, 25, 0.15);
+  margin: 3px;
+  cursor: pointer;
+}
+.control.active {
+  background: url("../img/control-activ.png") center center no-repeat;
+  background-size: auto;
+}
 .block-photo {
   width: 274px;
   height: auto;
@@ -391,7 +407,8 @@ a {
   display: block;
   bottom: -3rem;
 }
-.block-photo--public {
+.block-photo--float,
+.block-photo--report.block-photo--float {
   float: left;
   margin: 2rem;
   margin-left: 0;
@@ -433,10 +450,40 @@ a {
   background-size: 90% 95%;
 }
 @media (max-width: 780px) {
-  .block-photo--public {
+  .block-photo--float {
     float: none;
     display: block;
     margin: 1rem auto 4rem;
+  }
+}
+.nav-item {
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-top: 2rem;
+}
+.nav-item span,
+.nav-item b {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #eae1c9;
+}
+.nav-item b {
+  font-weight: normal;
+  margin-top: -0.5rem;
+}
+.nav-item span:hover,
+.nav-item span.active,
+.nav-item span:active {
+  color: #9c874b;
+  cursor: pointer;
+}
+@media (max-width: 780px) {
+  .nav-publication {
+    text-align: center;
   }
 }
 .first-screen-bg {
@@ -2805,37 +2852,9 @@ a:hover .social-block__item {
 .publication__last-img img {
   width: 100%;
 }
-.nav-publication {
-  display: block;
-  width: 100%;
-  text-align: right;
-  padding-top: 2rem;
-}
-.nav-publication span,
-.nav-publication b {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 1rem;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #eae1c9;
-}
-.nav-publication b {
-  font-weight: normal;
-  margin-top: -0.5rem;
-}
-.nav-publication span:hover,
-.nav-publication span.active,
-.nav-publication span:active {
-  color: #9c874b;
-  cursor: pointer;
-}
 @media (max-width: 780px) {
   .publication__last-img {
     display: none;
-  }
-  .nav-publication {
-    text-align: center;
   }
 }
 .contacts {
@@ -3058,6 +3077,33 @@ a:hover .social-block__item {
   .gallery {
     background-image: none;
   }
+}
+.gallery-item {
+  width: 100%;
+  max-width: 960px;
+  padding: 0 1.25rem;
+  margin: 0 auto;
+}
+@media (max-width: 960px) {
+  .gallery-item {
+    width: 100%;
+  }
+}
+@media (max-width: 780px) {
+  .gallery-item {
+    width: auto;
+    text-align: center;
+    min-width: 320px;
+    padding: 0 1.2rem;
+  }
+}
+.gallery-item h2 {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+.gallery-item h2.head-page {
+  color: #9c874b;
+  text-align: center;
 }
 .report {
   display: inline-block;

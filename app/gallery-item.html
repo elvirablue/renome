@@ -25,20 +25,6 @@
 	
 	<link rel="stylesheet" href="css/venders/jquery.arcticmodal-0.3.css">	
 	<script src="js/venders/jquery.arcticmodal-0.3.min.js"></script>
-
-	<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-	<script type="text/javascript">
-            var map;
-
-            DG.then(function () {
-                map = DG.map('map', {
-                    center: [55.041193,82.918783],
-                    zoom: 16
-                });
-
-                DG.marker([55.041193,82.918783]).addTo(map).bindPopup('Пространство «РЕНОМЕ»');
-            });
-        </script>
 	<!--[if lte IE 9]>
 	    <script src="oldies/oldies.js" charset="utf-8"></script>
 	    <style>
@@ -84,8 +70,8 @@
 						<li><a href="about.html">О нас</a></li>
 						<li><a href="schedule.html">Расписание</a></li>
 						<li><a href="smi-publications.html">СМИ о нас</a></li>
-						<li><a href="gallery.html">Фотогалерея</a></li>
-						<li class="active"><a>Аренда</a></li>
+						<li class="active"><a>Фотогалерея</a></li>
+						<li><a href="lease.html">Аренда</a></li>
 						<li><a href="area.html">Пространство</a></li>
 						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
@@ -94,21 +80,66 @@
 		</div>
 
 	<!-- *************************** ПЕРВЫЙ ЭКРАН ***************************************- -->
-		<div class="site-page">			
-			<h2 class="head-page">Аренда</h2>
-			<div class="separator"></div>
-			<i class="control"></i><i class="control active"></i><i class="control"></i><i class="control"></i>
-			<div class="text-content-inner">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius </p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius </p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius </p>
+		<div class="gallery-item">
+			<div class="nav-item">
+				<span class="js-prev">&larr;</span>	
+				<b>&hellip;</b>
+				<span class="js-next">&rarr;</span>				
 			</div>
-				
+
+			<hr class="hr-beige">
+			<h2>Фото отчёт 8 МАРТА " ЖЕНСКИЙ ДЕНЬ В РЕНОМЕ "</h2>
+			<p class="publication__comment">Дата проведения мерприятия: 00.00.0000</p>
+			<div class="text-content-inner">
+				<figure class="block-photo block-photo--float ">
+					<img src="img/gallery/1.jpg" alt="">							
+					<figcaption>
+						на фото: Фамилия Имя и Фмилия Имя
+					</figcaption>
+				</figure>			
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
+				</p>
+				<p>et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam m</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
+				</p>
+				<p>et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam m</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
+				</p>
+			</div>
+		</div>
+		<div class="gallery-item">
+			<hr class="hr-beige">
 		</div>
 
-	
-	<div class="separator"></div>
-	<div class="separator"></div>
+		<div class="main-galery-bg">			
+			<div class="main-galery">
+				
+				<h2>Фотогалерея</h2>
+			</div>
+			<div class="main-galery">
+				<div class="main-galery__arrow prev js-photo-prev">◄</div>
+				<div class="main-galery__photo-wrapper">
+					<ul class="main-galery__photo-list">
+						<li class="main-galery__photo-item">
+							<img src="img/gallery/1-0.jpg" alt="">
+						</li>						
+					</ul>					
+				</div>
+				<div class="main-galery__arrow next js-photo-next">►</div>
+			</div>			
+		</div>
+
+			
+
+		
+						
+		
+
+	<!-- *************************** БЛОК ***************************************- -->
+		
+
+		<div class="separator"></div>
+		<div class="separator"></div>
 	<!-- *************************** БЛОК ПОДВАЛ***************************************- -->	
 	</div> <!-- end wrapper-y -->	
 
@@ -148,10 +179,10 @@
 						<li><a href="about.html">О нас</a></li>
 						<li><a href="schedule.html">Расписание</a></li>
 						<li><a href="smi-publications.html">СМИ о нас</a></li>
-						<li><a href="gallery.html">Фотогалерея</a></li>
-						<li class="active"><a>Аренда</a></li>
+						<li class="active"><a>Фотогалерея</a></li>
+						<li><a href="lease.html">Аренда</a></li>
 						<li><a href="area.html">Пространство</a></li>
-						<li><a href="contact.html">Контакты</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
 				</div>
 			</nav>
