@@ -127,12 +127,13 @@
 					</div>
 				</div>
 
-				<div class="main-events__block-prev">
-					<div class="event-prev">
-						<div class="event-prev__arrow prev js-ev-prev">◄</div>
+				<div class="main-events__block-prev events-slider js_slider js_variablewlidth">
+					<div class="event-prev js_frame">
+						<div class="event-prev__arrow prev js-ev-prev js_prev">◄</div>
 						<div class="event-prev-wrapper">
-							<ul class="event-prev__list">
-								<li class="event-prev__item ">
+							<ul class="event-prev__list js_slides">
+
+								<li class="event-prev__item js_slide">
 									<div class="event-prev__item-flex">
 										<div class="event-prev__img-wr">
 											<img src="img/events/event2.jpg" alt="">
@@ -148,7 +149,7 @@
 										</div>	
 									</div>												
 								</li>
-								<li class="event-prev__item ">
+								<li class="event-prev__item js_slide">
 									<div class="event-prev__item-flex">
 										<div class="event-prev__img-wr">
 											<img src="img/events/event3.jpg" alt="">
@@ -164,7 +165,7 @@
 										</div>	
 									</div>												
 								</li>
-								<li class="event-prev__item ">
+								<li class="event-prev__item js_slide">
 									<div class="event-prev__item-flex">
 										<div class="event-prev__img-wr">
 											<img src="img/events/event4.jpg" alt="">
@@ -180,10 +181,11 @@
 										</div>	
 									</div>												
 								</li>
+								<li class="event-prev__item js_slide"></li>
 							</ul>
 							
 						</div>						
-						<div class="event-prev__arrow next js-ev-next">►</div>	
+						<div class="event-prev__arrow next js-ev-next js_next">►</div>	
 					</div>			
 				</div>
 			</div>			
@@ -404,7 +406,7 @@
 				</div>
 
 				<div class="btn-block">
-					<a href="#" class="btn-sand review__btn">Смотреть все отзывы</a>
+					<a href="reviews.html" class="btn-sand review__btn">Смотреть все отзывы</a>
 					
 				</div>
 			</div>
@@ -526,20 +528,35 @@
 
 		<!-- *************************** БЛОК ФОТОГАЛЕРЕЯ *************************************** -->
 		<div class="separator"></div>
-		<div class="main-galery-bg">
+		<div class="main-galery-bg main-photo-slider js_slider js_variablewlidth">
 			<div class="main-galery">
 				<h2>ФОТОГАЛЕРЕЯ</h2>
 			</div>
-			<div class="main-galery">
-				<div class="main-galery__arrow prev js-photo-prev">◄</div>
+			<div class="main-galery js_frame">
+				<div class="main-galery__arrow prev js-photo-prev js_prev">◄</div>
 				<div class="main-galery__photo-wrapper">
-					<ul class="main-galery__photo-list">
-						<li class="main-galery__photo-item">
-							<img src="img/photo/photo-1.png" alt="">
+					<ul class="main-galery__photo-list  js_slides">
+						<li class="main-galery__photo-item js_slide">
+							<img src="img/photo/photo-1.jpg" alt="">
+						</li>
+						<li class="main-galery__photo-item js_slide">
+							<img src="img/photo/photo-2.jpg" alt="">
+						</li>						
+						<li class="main-galery__photo-item js_slide">
+							<img src="img/photo/photo-3.jpg" alt="">
+						</li>
+						<li class="main-galery__photo-item js_slide">
+							<img src="img/photo/photo-4.jpg" alt="">
+						</li>
+						<li class="main-galery__photo-item js_slide">
+							<img src="img/photo/photo-5.jpg" alt="">
+						</li>
+						<li class="main-galery__photo-item js_slide">
+							<img src="img/photo/photo-3.jpg" alt="">
 						</li>						
 					</ul>					
 				</div>
-				<div class="main-galery__arrow next js-photo-next">►</div>
+				<div class="main-galery__arrow next js-photo-next js_next">►</div>
 			</div>			
 		</div>
 		<div class="btn-block">

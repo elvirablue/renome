@@ -218,6 +218,14 @@ a {
   display: none;
   padding-bottom: 3rem;
 }
+@media (max-width: 960px) {
+  .flamp--desktop {
+    display: none;
+  }
+  .flamp--mobil {
+    display: block;
+  }
+}
 @media (max-width: 780px) {
   .separator {
     height: 30px;
@@ -244,12 +252,6 @@ a {
   h3 {
     font-family: "GothamProRegular", Arial, sans-serif;
     font-size: 1.2rem;
-  }
-  .flamp--desktop {
-    display: none;
-  }
-  .flamp--mobil {
-    display: block;
   }
 }
 .btn-beige {
@@ -1845,6 +1847,10 @@ a:hover .social-block__item {
   height: 18.25rem;
   overflow: hidden;
 }
+.site-page .main-reviews-wr {
+  height: auto;
+  overflow: visible;
+}
 .review {
   margin: 0.35rem;
   display: inline-block;
@@ -1866,7 +1872,7 @@ a:hover .social-block__item {
 }
 .review__title {
   display: block;
-  margin: 1rem auto;
+  margin: 1rem auto 3rem;
   text-align: center;
 }
 .review__title-name {
@@ -2193,24 +2199,47 @@ a:hover .social-block__item {
 }
 .main-galery__photo-list {
   display: block;
-  width: 100rem;
+  width: 10000rem;
   text-align: left;
   list-style: none;
 }
 .main-galery__photo-item {
   display: inline-block;
   vertical-align: top;
-  width: 56rem;
+  width: auto;
   height: 34.375rem;
   overflow: hidden;
   -webkit-border-radius: 5px;
           border-radius: 5px;
 }
 .main-galery__photo-item img {
-  width: 100%;
+  width: auto;
+  height: 34.375rem;
 }
 .main-galery__btn {
   padding-top: 0;
+}
+@media (max-width: 960px) {
+  .main-galery__photo-wrapper {
+    width: 95%;
+  }
+}
+@media (max-width: 780px) {
+  .main-galery-bg {
+    background-size: cover;
+  }
+  .main-galery__photo-wrapper {
+    margin: 4.7rem auto 1.5rem;
+    width: 90%;
+    height: 20rem;
+  }
+  .main-galery__photo-item {
+    height: 20rem;
+  }
+  .main-galery__photo-item img {
+    width: auto;
+    height: 20rem;
+  }
 }
 .subs {
   width: 100%;
@@ -2814,6 +2843,33 @@ a:hover .social-block__item {
 .about__text-wr p {
   text-align: justify;
   padding-bottom: 1rem;
+}
+.about__text-unfolding {
+  display: none;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.about__text-unfolding p {
+  text-align: justify;
+  padding-bottom: 1rem;
+}
+.about__text-unfolding button {
+  width: 17rem;
+  display: inline-block;
+}
+@media (max-width: 780px) {
+  .about-bg {
+    background-image: none;
+    height: auto;
+  }
+  .about {
+    padding: 0 1.2rem 4rem;
+  }
+  .about__text {
+    display: block;
+    width: 100%;
+    float: none;
+  }
 }
 .publication {
   width: 100%;

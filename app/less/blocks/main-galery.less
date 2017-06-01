@@ -43,7 +43,7 @@
 
 	&__photo-list {
 		display: block;
-		width: 100rem;
+		width: 10000rem;
 		text-align: left;
 		list-style: none;
 	}
@@ -51,16 +51,44 @@
 	&__photo-item {
 		display: inline-block;
 		vertical-align: top;
-		width: 56rem;
+		width: auto;
 		height: 34.375rem;
 		overflow: hidden;
 		border-radius: 5px;
 		img {
-			width: 100%;
+			width: auto;
+   			height: 34.375rem;
 		}
 	}
 
 	&__btn {
 		padding-top: 0;
+	}
+}
+
+@media @tablet-widths {
+	.main-galery__photo-wrapper {		
+    	width: 95%;
+    	
+	}
+	
+}
+
+@media @mobil-widths {
+	.main-galery-bg {
+		background-size: cover;
+	}
+
+	.main-galery__photo-wrapper {
+		margin: 4.7rem auto 1.5rem;
+    	width: 90%;
+    	height: 20rem;
+	}
+	.main-galery__photo-item {
+		height: 20rem;
+		img {
+			width: auto;
+   			height: 20rem;
+		}
 	}
 }
