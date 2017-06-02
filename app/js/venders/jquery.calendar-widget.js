@@ -1,6 +1,7 @@
 (function($) { 
  var storage_cur_month = localStorage.getItem('cur_month');
-  var storage_cur_year = localStorage.getItem('cur_year');  
+  var storage_cur_year = localStorage.getItem('cur_year');
+  console.log(storage_cur_month);
   var curDate   = new Date();
   var curMonth = curDate.getMonth() + 1;
   var curYear  = curDate.getYear() + 1900;
@@ -40,7 +41,7 @@
 			for (d=0; d<7; d++) {
 				table += '<th class="weekday">' + dayNames[d] + '</th>';
 			}
-			
+			 
 			table += '</tr>';
 		
 			var days = getDaysInMonth(month,year);
@@ -63,9 +64,10 @@
                 table += ('<td class="other-month"><span class="day">'+ (prev_days-firstDay+j+1) +'</span></td>');
 			  } else if ((j>=firstDay+getDaysInMonth(month,year))) {
 				i = i+1;
-                table += ('<td class="other-month"><span class="day">'+ i +'</span></td>');			 
+                table += ('<td class="other-month"><span class="day">'+ i + '</span></td>');			 
               }else{
-                table += ('<td class="current-month day'+(j-firstDay+1)+'"><span class="day">'+(j-firstDay+1)+'</span></td>');
+                table += ('<td class="current-month day'+(j-firstDay+1)+'"><span class="day">'+(j-firstDay+1)+
+                '</span><span class="doing"><i class="circle busines"></i><i class="circle kitchen"></i><i class="circle busines"></i><i class="circle kitchen"></i><i class="circle busines"></i><i class="circle kitchen"></i></span></td>');
               }
               if (j%7==6)  table += ('</tr>');
             }

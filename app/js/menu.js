@@ -59,9 +59,11 @@ $(document).on('ready', function(){
   if (parseInt(storage_cur_year)) curYear = +storage_cur_year; else storage_cur_year = curYear;
 
   $("#calendar").calendarWidget({
-    month: 5,//parseInt(storage_cur_month), // номер месяца 
+    month: parseInt(storage_cur_month), // номер месяца 
     year: parseInt(storage_cur_year)              
   });  
+
+  $("#calendar .current-month.day1").addClass('active');
 
 
 

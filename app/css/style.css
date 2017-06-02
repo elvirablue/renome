@@ -1696,6 +1696,7 @@ a:hover .social-block__item {
 }
 .calendar-wrapper {
   display: block;
+  position: relative;
   width: 100%;
   height: 100%;
   background: url("../img/bg-calendar.png") center center no-repeat;
@@ -1741,6 +1742,7 @@ a:hover .social-block__item {
   padding-bottom: 2rem;
 }
 .calendar table td {
+  width: 14.28%;
   padding: 1.4rem 0;
   border: 1px solid #e0dbd4;
   background-color: #ffffff;
@@ -1749,9 +1751,22 @@ a:hover .social-block__item {
   font-family: 'Palatino Linotype', Palatino, serif;
   font-size: 1.55rem;
 }
+.calendar table td span.doing {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 1.25rem;
+  padding: 0 3px;
+  overflow: hidden;
+  text-align: center;
+}
 .calendar .current-month {
   color: #000000;
   cursor: pointer;
+  position: relative;
 }
 .calendar .current-month.active,
 .calendar .current-month:active,
@@ -1759,6 +1774,7 @@ a:hover .social-block__item {
   -webkit-box-shadow: inset 0 0 2px 1px #ffffff;
           box-shadow: inset 0 0 2px 1px #ffffff;
   background-color: #eae2ca;
+  position: relative;
 }
 .calendar .other-month {
   color: #c2b79d;
@@ -1776,7 +1792,8 @@ a:hover .social-block__item {
   font-size: 0.9rem;
   letter-spacing: 1.1px;
 }
-.calendar-conventions i {
+.calendar-conventions i,
+.calendar-month i {
   display: inline-block;
   vertical-align: middle;
   width: 8px;
@@ -3185,6 +3202,28 @@ a:hover .social-block__item {
     display: block;
     margin: 0 auto;
   }
+}
+.calendar-popup {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 0;
+  margin: 0 5%;
+  width: 90%;
+  height: 200px;
+}
+.popup-block {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #eae2ca;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #f9f3ea;
+  position: relative;
 }
 .hidden {
   display: none;
